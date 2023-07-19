@@ -16,7 +16,7 @@ var quotes = [
   "Ins Unmögliche",
   "Mache eine vollständige Liste aller Dinge, die Du tun könntest und mache das letzte auf der Liste",
   "Mut!",
-  "Kurzschluss (Falls Erbsen deine Potenz steigern, schaufel welche in deine Hosen",
+  "Kurzschluss",
   "Mache eine Leerstelle nützlich, indem Du sie in einen exklusiven Rahmen stellst",
   "Gehe langsam einmal um das Äußere",
   "Zerstöre 1.nichts 2.die wichtigste Sache",
