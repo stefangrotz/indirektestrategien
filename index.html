@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Malrektaj stategioj por kreativuloj</title>
+    <style>
+              @font-face {
+    font-family: "typewriter";
+    src: url("./veteran-typewriter.ttf");
+}
+               body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            
+            background-color: #F0F0D8;
+            color: #343A40;
+            font-family: typewriter, sans-serif;
+            padding: 5px;
+        }
+        .quote-container {
+            text-align: center;
+            max-width: 80%;
+            font-size: 3em;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+        #change-quote {
+            
+                
+                display: inline-block;
+                outline: 0;
+                border: 0;
+                cursor: pointer;
+                border-radius: 8px;
+                padding: 14px 24px 16px;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 1;
+                transition: transform 200ms,background 200ms;
+                background: transparent;
+                color: #000000;
+                box-shadow: 0 0 0 3px #000000 inset;
+                
+        }
+        #change-quote:hover {
+            transform: translateY(-4px);
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="quote-container">
+        <h2 id="quote">...</h2>
+        <button id="change-quote">Mi volas pli</button>
+    </div>
+
+    <footer>
+      198 frazoj bazitaj sur <a target="_blank" href="https://en.wikipedia.org/wiki/Oblique_Strategies">Oblique Strategies</a> - <a target="_blank" href="https://github.com/stefangrotz/malrektajstrategioj">GitHub</a>
+    </footer>
+
+    <script src="frazoj.js"></script>
+    <script>
+        function changeQuote() {
+            var quote = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById('quote').innerText = quote;
+        }
+
+        window.onload = changeQuote;
+
+        document.getElementById('change-quote').onclick = changeQuote;
+    </script>
+</body>
+
+</html>
